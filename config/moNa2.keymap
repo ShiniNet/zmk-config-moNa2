@@ -16,7 +16,19 @@
 &lt { quick-tap-ms = <200>; };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        COMBO_ESC {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        COMBO_TAB {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -62,10 +74,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                &kp T                                               &kp Y      &kp U  &lt 5 I    &kp O    &kp P
+&kp Q             &kp W         &kp E         &kp R                &kp T                                               &kp Y      &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                &kp G                              &mo 4            &kp H      &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                &kp B        &kp LANGUAGE_2        &kp LANGUAGE_1   &kp N      &kp M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp INTERNATIONAL_4  &lt 1 SPACE  &lt 6 INT_MUHENKAN    &lt 2 BACKSPACE  &kp ENTER                             &kp DEL
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp INTERNATIONAL_4  &lt 1 SPACE  &lt 5 INT_MUHENKAN    &lt 2 BACKSPACE  &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
