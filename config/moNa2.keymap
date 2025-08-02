@@ -74,7 +74,7 @@
         layer_1 {
             bindings = <
 &mt2 F1 N1     &mt2 F2 N2   &mt2 F3 N3     &mt2 F4 N4        &mt2 F5 N5                           &kp KP_COMMA     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE
-&mt2 F6 N6     &mt2 F7 N7   &mt2 F8 F8     &mt2 F9 N9        &mt2 LS(F10) N0              &trans  &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY
+&mt2 F6 N6     &mt2 F7 N7   &mt2 F8 N8     &mt2 F9 N9        &mt2 LS(F10) N0              &trans  &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY
 &mt F11 GRAVE  &mt F12 SQT  &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS
 &trans         &trans       &trans         &trans            &trans             &trans    &trans  &trans                                                              &kp KP_PLUS
             >;
