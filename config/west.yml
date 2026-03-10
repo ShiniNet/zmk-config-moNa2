@@ -18,7 +18,7 @@ manifest:
       revision: main
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar
-      revision: main
+      revision: v0.3.0
     - name: zmk-driver-iqs9151
       remote: ShiniNet
       revision: main
