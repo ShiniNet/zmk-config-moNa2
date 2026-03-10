@@ -27,7 +27,7 @@ status = "okay";
     iqs9151: iqs9151@56 {
         compatible = "azoteq,iqs9151";
         reg = <0x56>;
-        status = "disabled";
+        status = "okay";
         irq-gpios = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
