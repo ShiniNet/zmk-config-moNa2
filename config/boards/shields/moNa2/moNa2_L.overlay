@@ -12,5 +12,22 @@
 };
 
 &left_encoder {
+        status = "disabled";
+};
+
+&trackpad_split_L {
     status = "okay";
+    device = <&iqs9151>;
+};
+
+// TrackPad on I2C
+&xiao_i2c {
+status = "okay";
+
+    iqs9151: iqs9151@56 {
+        compatible = "azoteq,iqs9151";
+        reg = <0x56>;
+        status = "disabled";
+        irq-gpios = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    };
 };
